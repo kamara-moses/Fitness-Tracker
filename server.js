@@ -22,7 +22,7 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/fittrack', { us
 //require('./seeders/seed')
 
 //use routes
-require('./routes/api-routes')(app)
+require('./routes/api-routes.js')(app)
 require('./routes/html-routes')(app)
 
 

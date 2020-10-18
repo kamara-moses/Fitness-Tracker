@@ -1,0 +1,22 @@
+{
+    "name": "fitness-tracker",
+    "version": "1.0.0",
+    "description": "A fitness tracker that will allow consumers to set goals and track their workout progress",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \\\"Error: no test specified\\\" && exit 1",
+        "start": "node server.js",
+        "watch": "nodemon server.js",
+        "seed": "node seeders/seed.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/kamara-moses/Fitness-Tracker.git"
+    },
+    "author": "Moses Kamara",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/kamara-moses/Fitness-Tracker/issues"
+    },
+    "homepage": "https://github.com/kamara-moses/Fitness-Tracker#readme"
+}

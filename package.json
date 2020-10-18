@@ -18,5 +18,10 @@
     "bugs": {
         "url": "https://github.com/kamara-moses/Fitness-Tracker/issues"
     },
-    "homepage": "https://github.com/kamara-moses/Fitness-Tracker#readme"
+    "homepage": "https://github.com/kamara-moses/Fitness-Tracker#readme",
+    "dependencies": {
+        "express": "^4.17.1",
+        "mongoose": "^5.10.9",
+        "morgan": "^1.10.0"
+    }
 }

@@ -2,8 +2,9 @@
 const express = require('express');
 const logger = require('morgan');
 const mongoose = require('mongoose');
+const path = require('path');
 //set port
-const PORT = process.env.PORT || 27017;
+const PORT = process.env.PORT || 2700;
 
 const app = express();
 
@@ -19,12 +20,20 @@ app.use(express.static('public'));
 
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/fitness-tracker', { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true, useFindAndModify: false });
 
-//require('./seeders/seed')
+require("./routes/api-routes.js")(app);
 
-//use routes
-require('./routes/api-routes.js')(app)
-require('./routes/html-routes')(app)
-
+//index
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, '/public/index.html'));
+});
+//exercise
+app.get('/exercise', (req, res) => {
+    res.sendFile(path.join(__dirname, '/public/exercise.html'));
+});
+//stats
+app.get('/stats', (req, res) => {
+    res.sendFile(path.join(__dirname, '/public/stats.html'));
+});
 
 app.listen(PORT, () => {
     console.log(`App running on port ${PORT}..`);

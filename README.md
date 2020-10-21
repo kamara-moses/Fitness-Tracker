@@ -1,12 +1,12 @@
 ## Badges
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+## Description:
+An application that allows users to view, create and track their daily workouts. They are able to log multiple exercises in a workout on a given day. Each user can track the name, type, weight, sets, reps, and duration of their exercise. If the exercise is a cardio exercise, they are able to track the distance they traveled.
+
 ![Fitness Tracker Demo](public/assets/images/fitness-tracker.gif)
 
 <img src='public/assets/images/fitness-track.png' alt='Fitness Tracker Image'>
-
-## Description:
-An application that allows users to view, create and track their daily workouts. They are able to log multiple exercises in a workout on a given day. Each user can track the name, type, weight, sets, reps, and duration of their exercise. If the exercise is a cardio exercise, they are able to track the distance they traveled.
 
 ## Topics:
 - Models
